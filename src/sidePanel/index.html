@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyEvyAi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Manrope:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href='./style.css' />
+</head>
+<body>
+<div id="app">
+  <header><h1>MyEvyAI</h1></header>
+<main>
+  <section class="stack">
+    <div class="hint-section" >
+      <label class="label" for="hint-text">Hint the AI</label>
+      <textarea id="hint-text" rows="4" placeholder="Put a hint to help the ai generate a better response"></textarea>
+    </div>
+    <div class="about-section" >
+        <label class="checkbox">
+            <input id="includeAbout" type="checkbox" />
+            <span>Include about me</span>
+        </label>
+        <div class="about-text">
+          <label class="label" for="about-text">Who you are?</label>
+          <textarea id="about-text" rows="2" placeholder="A sentence or two about you…"></textarea>
+              <a id="saveDefault" class="link" href="#">Save as default</a>
+        </div>
+    </div>
+    <button id="generate" class="mainButton">Generate</button>
+    <div id="status" class="status"></div>
+  </section>
+  <div class="divider"></div>
+  <section class="stack">
+    <label class="label" for="draft">Output</label>
+    <textarea id="draft" rows="4" placeholder="Your output will appear here"></textarea>
+    <div class="row">
+      <button id="regenerate" class="secondary">Regenerate</button>
+      <button id="insert" class="secondary">Insert</button>
+    </div>
+  </section>
+</main>
+</div>
+    <script type="module" src="./sidepanel.ts"></script>
+</body>
+</html>

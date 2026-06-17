@@ -1,0 +1,10 @@
+export const el = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
+export const hintEl = el<HTMLTextAreaElement>("hint-text");
+export const includeEl = el<HTMLInputElement>("includeAbout");
+export const aboutEl = el<HTMLTextAreaElement>("about-text");
+export const draftEl = el<HTMLTextAreaElement>("draft");
+export const statusEl = el<HTMLDivElement>("status");
+export const saveLink = el<HTMLAnchorElement>("saveDefault");
+export const genBtn = el<HTMLButtonElement>("generate");
+export const insertBtn = el<HTMLButtonElement>("insert");
+export const regenBtn = el<HTMLButtonElement>("regenerate");
